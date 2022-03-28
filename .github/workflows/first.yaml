@@ -1,5 +1,5 @@
 name: 测试流程
-on: [push, commit]
+on: [push]
 
 jobs:
   first-job:

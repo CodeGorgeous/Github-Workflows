@@ -2,16 +2,6 @@ name: Demo
 on: [push]
 
 jobs:
-  first-job:
-    name: 
-    runs-on: 
-    steps:
-    - name: 
-      env:
-        
-      run: |
-        echo Hello World, I'm $MY_NAME.
-jobs:
   my-job:
     name: myFirstJob
     runs-on: ubuntu-latest

@@ -1,16 +1,13 @@
-name: Greeting from Mona
-on: push
+name: 测试流程
+on: [push]
 
 jobs:
-  my-job:
-    name: My Job
+  first-job:
+    name: myFirstJob
     runs-on: ubuntu-latest
     steps:
-    - name: Print a greeting
+    - name: step-1
       env:
-        MY_VAR: Hi there! My name is
-        FIRST_NAME: Mona
-        MIDDLE_NAME: The
-        LAST_NAME: Octocat
+        MY_NAME: CodeGorgeous
       run: |
-        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+        echo Hello World, I'm $MY_NAME.

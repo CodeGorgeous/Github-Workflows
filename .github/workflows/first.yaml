@@ -1,0 +1,13 @@
+name: 测试流程
+on: [push, commit]
+
+jobs:
+  first-job:
+    name: myFirstJob
+    runs-on: ubuntu-latest
+    steps:
+    - name: step-1
+      env:
+        MY_NAME: 'CodeGorgeous'
+      run: |
+        echo Hello World, I'm $MY_NAME.

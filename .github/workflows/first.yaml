@@ -1,4 +1,4 @@
-name: 测试流程
+name: Demo
 on: [push]
 
 jobs:

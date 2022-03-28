@@ -8,6 +8,8 @@ jobs:
     steps:
     - name: stepOne
       env:
+        MY_VAR: Hello World,
+        MY_VAR2: I'm
         MY_NAME: CodeGorgeous
       run: |
-        echo Hello World, I'm $MY_NAME.
+        echo $MY_VAR $MY_VAR2 $MY_NAME.

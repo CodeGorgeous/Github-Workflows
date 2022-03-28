@@ -2,15 +2,22 @@ name: Demo
 on: [push]
 
 jobs:
+  first-job:
+    name: 
+    runs-on: 
+    steps:
+    - name: 
+      env:
+        
+      run: |
+        echo Hello World, I'm $MY_NAME.
+jobs:
   my-job:
-    name: My Job
+    name: myFirstJob
     runs-on: ubuntu-latest
     steps:
-    - name: Print a greeting
+    - name: stepOne
       env:
-        MY_VAR: Hi there! My name is
-        FIRST_NAME: Mona
-        MIDDLE_NAME: The
-        LAST_NAME: Octocat
+        MY_NAME: CodeGorgeous
       run: |
-        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+        echo Hello World, I'm $MY_NAME.
